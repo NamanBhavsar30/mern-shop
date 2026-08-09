@@ -3,6 +3,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRoutes from './routes/auth';
 import productRoutes from './routes/products';
+import stripeRoutes from './routes/stripe';
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(cookieParser());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
+app.use('/api/stripe', stripeRoutes);
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 

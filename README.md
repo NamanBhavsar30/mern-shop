@@ -10,6 +10,12 @@ Quick start (local, docker)
 4. Backend API: http://localhost:5000/api
    Frontend: http://localhost:3000
 
+Stripe
+- This scaffolding includes a Stripe test checkout flow. Add your Stripe test keys to `.env`:
+  - STRIPE_SECRET_KEY
+  - STRIPE_PUBLISHABLE_KEY
+  - STRIPE_WEBHOOK_SECRET
+
 Notes:
 - This is scaffolding: production secrets, secure refresh-token storage, and scaling features require attention before going live.
 - I can push this into your GitHub repo if you provide owner/repo and confirm.
